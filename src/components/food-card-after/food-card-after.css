@@ -1,0 +1,25 @@
+.food-card__after,
+.food-card__after_none,
+.food-card__after_selected {
+  width: 100%;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.food-card__after_none {
+  color: #ffff66;
+}
+
+.food-card__link {
+  color: #1698d9;
+  border-bottom: 1px dashed #1698d9;
+  text-decoration: none;
+}
+
+.food-card__link:hover {
+  color: #43c0ff;
+  border-bottom: 1px dashed #43c0ff;
+  cursor: pointer;
+}

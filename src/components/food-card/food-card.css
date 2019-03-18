@@ -1,0 +1,135 @@
+.food-card-item {
+  font: 16px 'Trebuchet MS';
+  width: 320px;
+}
+
+.food-card {
+  height: 480px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background: #f2f2f2 -28px 203px no-repeat;
+  color: #666;
+  padding: 17px 45px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.food-card:hover {
+  cursor: pointer;
+}
+
+.food-card:after {
+  display: block;
+  position: absolute;
+  bottom: -92px;
+  left: -28px;
+  content: '';
+  width: 370px;
+  height: 361px;
+  background: url('./../../assets/img/cat.png');
+}
+
+.food-card_blue {
+  border: 4px solid #1698d9;
+}
+
+.food-card_blue.hover:hover {
+  border-color: #2ea8e6;
+}
+
+.food-card_blue.hover:hover .food-card__weight {
+  background: #2ea8e6;
+}
+
+.food-card__selected {
+  border-color: #d91667;
+}
+
+.food-card__selected .food-card__weight {
+  background: #d91667;
+}
+
+.food-card__selected.hover:hover {
+  border-color: #e62e7a;
+}
+
+.food-card__selected.hover:hover .food-card__weight {
+  background: #e62e7a
+}
+
+.food-card__title,
+.food-card__variant {
+  font-weight: 600;
+  color: #000;
+  font-size: 48px
+}
+
+.food-card__title {
+  margin-bottom: -1px;
+  margin-left: -2px;
+}
+
+.food-card__variant {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.food-card__info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.food-card__portions span {
+  font-weight: 600;
+}
+
+.food-card__weight {
+  position: absolute;
+  background: #1698d9;
+  width: 81px;
+  height: 81px;
+  color: #fff;
+  bottom: 11px;
+  right: 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 21px;
+  z-index: 2;
+}
+
+.food-card__weight-inn {
+  font-size: 42px;
+  margin-bottom: -7px;
+}
+
+.food-card-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.food-card_disable .food-card__pre-title,
+.food-card_disable .food-card__title,
+.food-card_disable .food-card__variant,
+.food-card_disable .food-card__info {
+  color: #b3b3b3
+}
+
+.food-card_disable .food-card__weight {
+  background: #b3b3b3;
+}
+
+.food-card_disable {
+  border-color: #b3b3b3;
+}
+
+.food-card_disable:hover {
+  cursor: default;
+}
+
+.food-card_disable:after {
+  opacity: 0.4;
+}
+
