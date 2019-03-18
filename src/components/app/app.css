@@ -166,6 +166,9 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  -webkit-box-shadow: inset 0px 127px 144px -24px rgba(0, 0, 0, 0.5), inset 0px -150px 144px -24px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: inset 0px 127px 144px -24px rgba(0, 0, 0, 0.5), inset 0px -150px 144px -24px rgba(0, 0, 0, 0.51);
+  box-shadow: inset 0px 127px 144px -24px rgba(0, 0, 0, 0.5), inset 0px -150px 144px -24px rgba(0, 0, 0, 0.51);
 }
 
 .app-wrapper {
@@ -189,4 +192,3 @@ body {
 .hidden {
   display: none;
 }
-
